@@ -1,0 +1,33 @@
+/* Custom branding for the Employee Management admin.
+   Overrides Django's built-in CSS custom properties — no template forking needed. */
+:root {
+    --primary: #0f4c81;          /* deep corporate blue */
+    --primary-fg: #fff;
+    --secondary: #0a3660;
+    --accent: #f2a900;           /* amber accent for highlights */
+    --header-color: #fff;
+    --header-branding-color: var(--accent);
+    --header-bg: var(--secondary);
+    --header-link-color: #fff;
+    --link-fg: #0f4c81;
+    --link-hover-color: #f2a900;
+    --button-bg: var(--primary);
+    --button-hover-bg: var(--secondary);
+    --default-button-bg: var(--primary);
+    --default-button-hover-bg: var(--secondary);
+    --object-tools-bg: var(--primary);
+    --object-tools-hover-bg: var(--secondary);
+}
+
+#branding h1 {
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+.module h2, .module caption, .inline-group h2 {
+    background: var(--primary);
+}
+
+div.breadcrumbs {
+    background: var(--secondary);
+}
